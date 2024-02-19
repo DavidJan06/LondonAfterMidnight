@@ -1,0 +1,32 @@
+#define VOS_NT_WINDOWS32    0x00040004L
+#define VFT_APP                      0x00000001L
+
+//this will set your .exe icon
+id ICON "data/London.ico"
+
+//include version information in .exe, modify these values to match your needs
+1 VERSIONINFO
+FILEVERSION 0,1,0,0
+PRODUCTVERSION 0,1
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", "David Jan & Klara Jan"
+			 VALUE "FileVersion", "0.1"
+			 VALUE "FileDescription", "London After Midnight"
+			 VALUE "InternalName", "London After Midnight"
+			 VALUE "LegalCopyright", "David Jan & Klara Jan"
+			 //VALUE "LegalTrademarks", "write version info here"
+			 //VALUE "OriginalFilename", "write version info here"
+			 VALUE "ProductName", "London After Midnight"
+			 VALUE "ProductVersion", "0.1"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0409, 1252 //language codes
+	 }
+}
