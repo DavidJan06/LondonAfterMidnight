@@ -13,6 +13,7 @@
 #define INTRO "data/audio/Intro.wav"
 #define MENU "data/audio/an-alien-presence-154528.wav"
 #define GAME "data/audio/el-llamado-120646.wav"
+#define ENDING "data/audio/The_Bandit_Ending.wav"
 
 //Splash Screen
 #define SPLASH_SCREEN_LOGO "data/art/sprites/Engine.png"

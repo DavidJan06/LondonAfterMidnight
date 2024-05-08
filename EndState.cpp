@@ -114,8 +114,8 @@ namespace Night_Rocket
         this->_cornerBottomRight.setPosition(this->_screen.getPosition().x + this->_screen.getSize().x/2 - this->_cornerBottomRight.getGlobalBounds().width/2, this->_screen.getPosition().y + this->_screen.getSize().y/2 - this->_cornerBottomRight.getGlobalBounds().height/2);
 
         //Music
-        this->_data->assets.LoadSoundBuffer("Intro", INTRO);
-        this->_data->_sound.setBuffer(this->_data->assets.GetSoundBuffer("Intro"));
+        this->_data->assets.LoadSoundBuffer("Ending", ENDING);
+        this->_data->_sound.setBuffer(this->_data->assets.GetSoundBuffer("Ending"));
         if(this->_data->_soundOn){
             this->_data->_sound.play();
         }
@@ -291,10 +291,10 @@ namespace Night_Rocket
                 this->_title.setString("Mentors");
                 this->_title.setOrigin(this->_title.getLocalBounds().width/2, this->_title.getLocalBounds().height/2);
 
-                this->_nameText1.setString("Mentor 1");
+                this->_nameText1.setString(L"Srečko Zorman");
                 this->_nameText1.setOrigin(this->_nameText1.getLocalBounds().width/2, this->_nameText1.getLocalBounds().height/2);
 
-                this->_nameText2.setString("Mentor 2");
+                this->_nameText2.setString("Rok Urbanc");
                 this->_nameText2.setOrigin(this->_nameText2.getLocalBounds().width/2, this->_nameText2.getLocalBounds().height/2);
                 // set up
 
