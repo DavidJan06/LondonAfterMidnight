@@ -48,7 +48,7 @@ namespace Night_Rocket
         this->_item.setPosition(sf::Vector2f(this->_screen.getPosition().x, this->_screen.getPosition().y));
 
         //Buttons
-        this->_backButton.SetUp("Close", this->_data->assets.GetFont("Nathan"), 70, sf::Color::White, this->_data->assets.GetTexture("TwoShort"), sf::Vector2f(0.2f,0.2f), sf::Vector2f(sf::VideoMode::getDesktopMode().width/2, sf::VideoMode::getDesktopMode().height*11/12));
+        this->_backButton.SetUp("Close", this->_data->assets.GetFont("Nathan"), 70, sf::Color::White, this->_data->assets.GetTexture("TwoShort"), sf::Vector2f(0.2f,0.2f), sf::Vector2f(this->_screen.getPosition().x, this->_screen.getSize().y*11/12));
         //this->_backButton.setDebug(true);
     }
 
